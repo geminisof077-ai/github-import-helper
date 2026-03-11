@@ -183,12 +183,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Countdown Timer */}
-      <section className="py-12 bg-muted/20">
-        <div className="container max-w-2xl">
-          <CountdownTimer />
-        </div>
-      </section>
 
       {/* Imagine 90 Days From Now Section */}
       <section className="py-16 md:py-24 bg-primary/5">
