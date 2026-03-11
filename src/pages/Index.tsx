@@ -399,7 +399,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {testimonials.map((testimonial, idx) => (
-              <div key={idx} className="bg-white p-8 rounded-lg border border-border hover:shadow-lg transition-shadow">
+              <div key={idx} className="bg-card p-8 rounded-xl border border-border/60 hover:shadow-md transition-all">
                 <div className="flex items-start justify-between mb-4">
                   <div className="flex gap-1">
                     {[...Array(5)].map((_, i) => (
