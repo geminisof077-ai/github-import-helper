@@ -287,7 +287,7 @@ export default function Home() {
               { icon: "🛡️", title: "Emergency Readiness Basics", desc: "Build food security for your family" },
               { icon: "✅", title: "Checklists & Action Plans", desc: "Step-by-step templates you can use today" },
             ].map((item, idx) => (
-              <div key={idx} className="bg-white p-6 rounded-lg border border-border hover:shadow-lg transition-shadow">
+              <div key={idx} className="bg-card p-7 rounded-xl border border-border/60 hover:shadow-md transition-all">
                 <div className="text-4xl mb-3">{item.icon}</div>
                 <h3 className="text-lg font-bold text-foreground mb-2">{item.title}</h3>
                 <p className="text-muted-foreground">{item.desc}</p>
