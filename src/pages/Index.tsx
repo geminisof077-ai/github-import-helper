@@ -336,7 +336,7 @@ export default function Home() {
       </section>
 
       {/* Meet the Expert Section */}
-      <section className="py-16 md:py-24 bg-muted/20">
+      <section className="py-20 md:py-28 bg-muted/15">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Author Image */}
