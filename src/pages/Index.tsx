@@ -226,7 +226,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Before */}
-            <div className="bg-white p-8 rounded-xl border border-border">
+            <div className="bg-card p-8 rounded-xl border border-border/60 shadow-sm">
               <h3 className="text-2xl font-bold text-foreground mb-6">❌ Before</h3>
               <ul className="space-y-4">
                 {[
