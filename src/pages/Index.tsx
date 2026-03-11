@@ -476,7 +476,7 @@ export default function Home() {
       </section>
 
       {/* Guarantee Section */}
-      <section className="py-16 md:py-24 bg-primary/10 border-t-4 border-primary">
+      <section className="py-20 md:py-28 bg-primary/8 border-t-2 border-primary/30">
         <div className="container text-center space-y-8">
           <div>
             <h2 className="text-foreground mb-4">You're Protected by a 7-Day No-Risk Guarantee</h2>
