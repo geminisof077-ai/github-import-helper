@@ -116,12 +116,12 @@ export default function Home() {
       <section className="relative overflow-hidden py-20 md:py-32">
         <div className="container grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left: Copy */}
-          <div className="space-y-8">
-            <div className="space-y-4">
-              <h1 className="text-foreground leading-tight">
+          <div className="space-y-10">
+            <div className="space-y-5">
+              <h1 className="text-foreground">
                 Save $250–$300/Month While Growing Your Own Food
               </h1>
-              <p className="text-xl text-muted-foreground leading-relaxed">
+              <p className="text-lg md:text-xl text-muted-foreground max-w-xl">
                 Discover the proven system that helps you grow fresh food, slash grocery bills, and build a more resilient home—right where you live. Join 5,000+ people who've already transformed their homes.
               </p>
             </div>
