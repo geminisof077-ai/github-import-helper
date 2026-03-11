@@ -390,7 +390,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-16 md:py-24 bg-muted/30">
+      <section className="py-20 md:py-28 bg-muted/20">
         <div className="container space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-foreground">Real Results From Real People</h2>
