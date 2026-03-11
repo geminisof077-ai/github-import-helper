@@ -94,7 +94,7 @@ export default function Home() {
   );
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white border-b border-border">
         <div className="container flex items-center justify-between py-4">
