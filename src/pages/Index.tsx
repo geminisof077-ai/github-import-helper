@@ -534,56 +534,56 @@ export default function Home() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-20 md:py-28 bg-gradient-to-br from-primary to-primary/85">
-        <div className="container text-center space-y-8">
-          <div className="space-y-4">
-            <h2 className="text-white">Start Building a Self-Reliant, Healthier, More Affordable Life Today</h2>
-            <p className="text-xl text-white/90 max-w-2xl mx-auto">
+      <section className="py-20 md:py-28" style={{ background: 'linear-gradient(165deg, hsl(155, 22%, 42%) 0%, hsl(155, 20%, 36%) 50%, hsl(155, 18%, 32%) 100%)' }}>
+        <div className="container text-center space-y-8 max-w-3xl mx-auto">
+          <div className="space-y-5">
+            <h2 className="text-white leading-tight">Start Building a Self-Reliant, Healthier, More Affordable Life Today</h2>
+            <p className="text-lg text-white/85 max-w-2xl mx-auto leading-relaxed">
               Why pay $49–$79 for the same information? You can get the full system today for just $12. This special price ends in 48 hours.
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col items-center gap-4">
             <Button
               onClick={() => window.location.href = HOTMART_LINK}
               size="lg"
-              className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-lg px-8 py-6"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-lg px-10 py-6 rounded-lg shadow-lg"
             >
               🔥 Get Instant Access for $12
             </Button>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-4 text-xs text-white/80">
-            <div className="flex items-center gap-1">
+          <div className="flex flex-wrap justify-center gap-6 text-sm text-white/70">
+            <div className="flex items-center gap-1.5">
               <Shield className="w-4 h-4" />
               <span>Secure Payment</span>
             </div>
-            <div className="flex items-center gap-1">
+            <div className="flex items-center gap-1.5">
               <CheckCircle2 className="w-4 h-4" />
               <span>7-Day Guarantee</span>
             </div>
-            <div className="flex items-center gap-1">
+            <div className="flex items-center gap-1.5">
               <Star className="w-4 h-4" />
               <span>5,000+ Happy Readers</span>
             </div>
           </div>
 
-          <p className="text-white/80 text-sm">
+          <p className="text-white/70 text-sm italic">
             Every day you wait is another day you pay more for food, energy, and essentials. Start saving today.
           </p>
 
-          <div className="flex flex-wrap justify-center gap-6 pt-8 border-t border-white/20">
+          <div className="flex flex-wrap justify-center gap-8 pt-8 border-t border-white/15">
             <div className="text-white">
-              <p className="font-bold">Instant Digital Access</p>
-              <p className="text-sm text-white/80">Start reading immediately</p>
+              <p className="font-bold text-sm">Instant Digital Access</p>
+              <p className="text-xs text-white/60">Start reading immediately</p>
             </div>
             <div className="text-white">
-              <p className="font-bold">7-Day Guarantee</p>
-              <p className="text-sm text-white/80">Full refund if not satisfied</p>
+              <p className="font-bold text-sm">7-Day Guarantee</p>
+              <p className="text-xs text-white/60">Full refund if not satisfied</p>
             </div>
             <div className="text-white">
-              <p className="font-bold">Complete System</p>
-              <p className="text-sm text-white/80">Everything you need to succeed</p>
+              <p className="font-bold text-sm">Complete System</p>
+              <p className="text-xs text-white/60">Everything you need to succeed</p>
             </div>
           </div>
         </div>
