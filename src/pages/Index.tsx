@@ -425,7 +425,7 @@ export default function Home() {
       </section>
 
       {/* What Happens After Purchase Section */}
-      <section className="py-16 md:py-24 bg-primary/5">
+      <section className="py-20 md:py-28 bg-primary/5">
         <div className="container">
           <div className="max-w-3xl mx-auto space-y-8">
             <div className="text-center space-y-4">
