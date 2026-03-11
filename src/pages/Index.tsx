@@ -96,7 +96,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-white border-b border-border">
+      <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border/50">
         <div className="container flex items-center justify-between py-4">
           <div className="flex items-center gap-2">
             <Leaf className="w-6 h-6 text-primary" />
