@@ -267,7 +267,7 @@ export default function Home() {
       </section>
 
       {/* What You'll Learn Section */}
-      <section className="py-16 md:py-24 bg-primary/5">
+      <section className="py-20 md:py-28 bg-primary/5">
         <div className="container space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-foreground">What You'll Learn</h2>
