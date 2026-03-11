@@ -534,7 +534,7 @@ export default function Home() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-r from-primary to-primary/80">
+      <section className="py-20 md:py-28 bg-gradient-to-br from-primary to-primary/85">
         <div className="container text-center space-y-8">
           <div className="space-y-4">
             <h2 className="text-white">Start Building a Self-Reliant, Healthier, More Affordable Life Today</h2>
