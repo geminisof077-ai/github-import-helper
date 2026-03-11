@@ -237,7 +237,7 @@ export default function Home() {
                   "Dependent on broken supply chains",
                 ].map((item, idx) => (
                   <li key={idx} className="flex gap-3 text-foreground">
-                    <span className="text-red-500 font-bold">✕</span>
+                    <span className="text-destructive font-bold">✕</span>
                     <span>{item}</span>
                   </li>
                 ))}
