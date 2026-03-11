@@ -201,7 +201,7 @@ export default function Home() {
                 { icon: "🥬", title: "Week 3-6", desc: "First harvest! Fresh salad greens on your table, savings visible" },
                 { icon: "💰", title: "Day 90", desc: "Hundreds in savings, thriving garden, complete confidence" },
               ].map((item, idx) => (
-                <div key={idx} className="bg-white p-6 rounded-lg border border-border text-center">
+                <div key={idx} className="bg-card p-8 rounded-xl border border-border/60 text-center shadow-sm">
                   <div className="text-5xl mb-3">{item.icon}</div>
                   <h3 className="font-bold text-foreground mb-2">{item.title}</h3>
                   <p className="text-muted-foreground text-sm">{item.desc}</p>
