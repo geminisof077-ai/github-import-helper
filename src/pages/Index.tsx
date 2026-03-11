@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ChevronDown, Leaf, TrendingDown, Award, CheckCircle2, Star, Zap, Shield } from "lucide-react";
 import { useState } from "react";
 import VideoPlayer from "@/components/VideoPlayer";
-import CountdownTimer from "@/components/CountdownTimer";
+
 
 const HOTMART_LINK = "https://hotmart.com/sanctuary-maker";
 
@@ -94,9 +94,9 @@ export default function Home() {
   );
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-white border-b border-border">
+      <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border/50">
         <div className="container flex items-center justify-between py-4">
           <div className="flex items-center gap-2">
             <Leaf className="w-6 h-6 text-primary" />
@@ -113,15 +113,15 @@ export default function Home() {
       </header>
 
       {/* Hero Section with Video */}
-      <section className="relative overflow-hidden py-16 md:py-24">
-        <div className="container grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="relative overflow-hidden py-20 md:py-32">
+        <div className="container grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left: Copy */}
-          <div className="space-y-8">
-            <div className="space-y-4">
-              <h1 className="text-foreground leading-tight">
+          <div className="space-y-10">
+            <div className="space-y-5">
+              <h1 className="text-foreground">
                 Save $250–$300/Month While Growing Your Own Food
               </h1>
-              <p className="text-xl text-muted-foreground leading-relaxed">
+              <p className="text-lg md:text-xl text-muted-foreground max-w-xl">
                 Discover the proven system that helps you grow fresh food, slash grocery bills, and build a more resilient home—right where you live. Join 5,000+ people who've already transformed their homes.
               </p>
             </div>
@@ -183,15 +183,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Countdown Timer */}
-      <section className="py-12 bg-muted/20">
-        <div className="container max-w-2xl">
-          <CountdownTimer />
-        </div>
-      </section>
 
       {/* Imagine 90 Days From Now Section */}
-      <section className="py-16 md:py-24 bg-primary/5">
+      <section className="py-20 md:py-28 bg-primary/5">
         <div className="container">
           <div className="max-w-3xl mx-auto space-y-8">
             <div className="text-center space-y-4">
@@ -207,7 +201,7 @@ export default function Home() {
                 { icon: "🥬", title: "Week 3-6", desc: "First harvest! Fresh salad greens on your table, savings visible" },
                 { icon: "💰", title: "Day 90", desc: "Hundreds in savings, thriving garden, complete confidence" },
               ].map((item, idx) => (
-                <div key={idx} className="bg-white p-6 rounded-lg border border-border text-center">
+                <div key={idx} className="bg-card p-8 rounded-xl border border-border/60 text-center shadow-sm">
                   <div className="text-5xl mb-3">{item.icon}</div>
                   <h3 className="font-bold text-foreground mb-2">{item.title}</h3>
                   <p className="text-muted-foreground text-sm">{item.desc}</p>
@@ -219,7 +213,7 @@ export default function Home() {
       </section>
 
       {/* Problem Section - Before/After */}
-      <section className="py-16 md:py-24 bg-muted/30">
+      <section className="py-20 md:py-28 bg-muted/20">
         <div className="container space-y-12">
           <div className="text-center space-y-4 max-w-3xl mx-auto">
             <h2 className="text-foreground">
@@ -232,7 +226,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Before */}
-            <div className="bg-white p-8 rounded-xl border border-border">
+            <div className="bg-card p-8 rounded-xl border border-border/60 shadow-sm">
               <h3 className="text-2xl font-bold text-foreground mb-6">❌ Before</h3>
               <ul className="space-y-4">
                 {[
@@ -243,7 +237,7 @@ export default function Home() {
                   "Dependent on broken supply chains",
                 ].map((item, idx) => (
                   <li key={idx} className="flex gap-3 text-foreground">
-                    <span className="text-red-500 font-bold">✕</span>
+                    <span className="text-destructive font-bold">✕</span>
                     <span>{item}</span>
                   </li>
                 ))}
@@ -273,7 +267,7 @@ export default function Home() {
       </section>
 
       {/* What You'll Learn Section */}
-      <section className="py-16 md:py-24 bg-primary/5">
+      <section className="py-20 md:py-28 bg-primary/5">
         <div className="container space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-foreground">What You'll Learn</h2>
@@ -293,7 +287,7 @@ export default function Home() {
               { icon: "🛡️", title: "Emergency Readiness Basics", desc: "Build food security for your family" },
               { icon: "✅", title: "Checklists & Action Plans", desc: "Step-by-step templates you can use today" },
             ].map((item, idx) => (
-              <div key={idx} className="bg-white p-6 rounded-lg border border-border hover:shadow-lg transition-shadow">
+              <div key={idx} className="bg-card p-7 rounded-xl border border-border/60 hover:shadow-md transition-all">
                 <div className="text-4xl mb-3">{item.icon}</div>
                 <h3 className="text-lg font-bold text-foreground mb-2">{item.title}</h3>
                 <p className="text-muted-foreground">{item.desc}</p>
@@ -301,7 +295,7 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="bg-white border-2 border-primary rounded-xl p-8 text-center">
+          <div className="bg-card border-2 border-primary/40 rounded-xl p-10 text-center shadow-sm">
             <p className="text-muted-foreground mb-2">Total Real-World Value:</p>
             <p className="text-4xl font-bold text-primary mb-4">$79+</p>
             <p className="text-2xl text-foreground">
@@ -312,7 +306,7 @@ export default function Home() {
       </section>
 
       {/* Who This Is For Section */}
-      <section className="py-16 md:py-24">
+      <section className="py-20 md:py-28">
         <div className="container">
           <div className="max-w-3xl mx-auto space-y-8">
             <div className="text-center space-y-4">
@@ -342,7 +336,7 @@ export default function Home() {
       </section>
 
       {/* Meet the Expert Section */}
-      <section className="py-16 md:py-24 bg-muted/20">
+      <section className="py-20 md:py-28 bg-muted/15">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Author Image */}
@@ -396,7 +390,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-16 md:py-24 bg-muted/30">
+      <section className="py-20 md:py-28 bg-muted/20">
         <div className="container space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-foreground">Real Results From Real People</h2>
@@ -405,7 +399,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {testimonials.map((testimonial, idx) => (
-              <div key={idx} className="bg-white p-8 rounded-lg border border-border hover:shadow-lg transition-shadow">
+              <div key={idx} className="bg-card p-8 rounded-xl border border-border/60 hover:shadow-md transition-all">
                 <div className="flex items-start justify-between mb-4">
                   <div className="flex gap-1">
                     {[...Array(5)].map((_, i) => (
@@ -431,7 +425,7 @@ export default function Home() {
       </section>
 
       {/* What Happens After Purchase Section */}
-      <section className="py-16 md:py-24 bg-primary/5">
+      <section className="py-20 md:py-28 bg-primary/5">
         <div className="container">
           <div className="max-w-3xl mx-auto space-y-8">
             <div className="text-center space-y-4">
@@ -482,7 +476,7 @@ export default function Home() {
       </section>
 
       {/* Guarantee Section */}
-      <section className="py-16 md:py-24 bg-primary/10 border-t-4 border-primary">
+      <section className="py-20 md:py-28 bg-primary/8 border-t-2 border-primary/30">
         <div className="container text-center space-y-8">
           <div>
             <h2 className="text-foreground mb-4">You're Protected by a 7-Day No-Risk Guarantee</h2>
@@ -507,7 +501,7 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 md:py-24 bg-muted/30">
+      <section className="py-20 md:py-28 bg-muted/15">
         <div className="container max-w-3xl space-y-8">
           <div className="text-center space-y-4">
             <h2 className="text-foreground">Frequently Asked Questions</h2>
@@ -516,7 +510,7 @@ export default function Home() {
 
           <div className="space-y-4">
             {faqs.map((faq, idx) => (
-              <div key={idx} className="bg-white border border-border rounded-lg overflow-hidden">
+              <div key={idx} className="bg-card border border-border/60 rounded-xl overflow-hidden shadow-sm">
                 <button
                   onClick={() => toggleFaq(idx)}
                   className="w-full px-6 py-4 flex items-center justify-between hover:bg-muted/50 transition-colors"
@@ -540,7 +534,7 @@ export default function Home() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-r from-primary to-primary/80">
+      <section className="py-20 md:py-28 bg-gradient-to-br from-primary to-primary/85">
         <div className="container text-center space-y-8">
           <div className="space-y-4">
             <h2 className="text-white">Start Building a Self-Reliant, Healthier, More Affordable Life Today</h2>

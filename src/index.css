@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,45 +6,45 @@
 
 @layer base {
   :root {
-    /* Sage Green + Warm Orange Palette for Modern Homesteading */
-    --background: 0 0% 99%;
-    --foreground: 65 8% 8%;
+    /* Refined Sage Green + Warm Terracotta Palette */
+    --background: 40 20% 98%;
+    --foreground: 150 10% 15%;
 
-    --card: 0 0% 96%;
-    --card-foreground: 30 10% 15%;
+    --card: 40 15% 96%;
+    --card-foreground: 150 10% 15%;
 
-    --popover: 0 0% 96%;
-    --popover-foreground: 30 10% 15%;
+    --popover: 40 15% 96%;
+    --popover-foreground: 150 10% 15%;
 
-    --primary: 155 28% 36%;
-    --primary-foreground: 0 0% 96%;
+    --primary: 155 22% 38%;
+    --primary-foreground: 40 20% 97%;
 
-    --secondary: 28 75% 52%;
-    --secondary-foreground: 0 0% 96%;
+    --secondary: 25 65% 50%;
+    --secondary-foreground: 40 20% 97%;
 
-    --muted: 0 0% 90%;
-    --muted-foreground: 30 5% 45%;
+    --muted: 40 10% 92%;
+    --muted-foreground: 150 5% 40%;
 
-    --accent: 28 75% 52%;
-    --accent-foreground: 0 0% 96%;
+    --accent: 25 65% 50%;
+    --accent-foreground: 40 20% 97%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 0 65% 55%;
     --destructive-foreground: 0 0% 97%;
 
-    --border: 0 0% 88%;
-    --input: 0 0% 93%;
-    --ring: 150 35% 32%;
+    --border: 40 10% 88%;
+    --input: 40 10% 90%;
+    --ring: 155 22% 38%;
 
-    --radius: 0.65rem;
+    --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 99%;
-    --sidebar-foreground: 30 10% 15%;
-    --sidebar-primary: 150 35% 30%;
-    --sidebar-primary-foreground: 0 0% 96%;
-    --sidebar-accent: 28 75% 52%;
-    --sidebar-accent-foreground: 0 0% 96%;
-    --sidebar-border: 0 0% 88%;
-    --sidebar-ring: 150 35% 32%;
+    --sidebar-background: 40 20% 98%;
+    --sidebar-foreground: 150 10% 15%;
+    --sidebar-primary: 155 22% 38%;
+    --sidebar-primary-foreground: 40 20% 97%;
+    --sidebar-accent: 25 65% 50%;
+    --sidebar-accent-foreground: 40 20% 97%;
+    --sidebar-border: 40 10% 88%;
+    --sidebar-ring: 155 22% 38%;
   }
 
   .dark {
@@ -57,7 +57,7 @@
     --popover: 240 6% 12%;
     --popover-foreground: 30 5% 85%;
 
-    --primary: 150 35% 40%;
+    --primary: 155 22% 42%;
     --primary-foreground: 0 0% 96%;
 
     --secondary: 240 6% 15%;
@@ -95,23 +95,33 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
+    letter-spacing: -0.02em;
+    color: hsl(var(--foreground));
   }
 
   h1 {
-    @apply text-5xl md:text-6xl leading-tight;
+    @apply text-4xl md:text-5xl lg:text-6xl leading-tight;
   }
 
   h2 {
-    @apply text-4xl md:text-5xl leading-tight;
+    @apply text-3xl md:text-4xl leading-tight;
   }
 
   h3 {
-    @apply text-2xl md:text-3xl leading-snug;
+    @apply text-xl md:text-2xl leading-snug;
+  }
+
+  p {
+    line-height: 1.75;
   }
 }
 
