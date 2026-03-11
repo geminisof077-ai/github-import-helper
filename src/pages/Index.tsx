@@ -114,7 +114,7 @@ export default function Home() {
 
       {/* Hero Section with Video */}
       <section className="relative overflow-hidden py-20 md:py-32">
-        <div className="container grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="container grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left: Copy */}
           <div className="space-y-8">
             <div className="space-y-4">
