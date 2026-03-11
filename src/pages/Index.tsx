@@ -510,7 +510,7 @@ export default function Home() {
 
           <div className="space-y-4">
             {faqs.map((faq, idx) => (
-              <div key={idx} className="bg-white border border-border rounded-lg overflow-hidden">
+              <div key={idx} className="bg-card border border-border/60 rounded-xl overflow-hidden shadow-sm">
                 <button
                   onClick={() => toggleFaq(idx)}
                   className="w-full px-6 py-4 flex items-center justify-between hover:bg-muted/50 transition-colors"
