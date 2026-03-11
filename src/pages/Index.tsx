@@ -213,7 +213,7 @@ export default function Home() {
       </section>
 
       {/* Problem Section - Before/After */}
-      <section className="py-16 md:py-24 bg-muted/30">
+      <section className="py-20 md:py-28 bg-muted/20">
         <div className="container space-y-12">
           <div className="text-center space-y-4 max-w-3xl mx-auto">
             <h2 className="text-foreground">
