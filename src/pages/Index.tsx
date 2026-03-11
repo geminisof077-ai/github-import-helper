@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ChevronDown, Leaf, TrendingDown, Award, CheckCircle2, Star, Zap, Shield } from "lucide-react";
 import { useState } from "react";
 import VideoPlayer from "@/components/VideoPlayer";
-import CountdownTimer from "@/components/CountdownTimer";
+
 
 const HOTMART_LINK = "https://hotmart.com/sanctuary-maker";
 
