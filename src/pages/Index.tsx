@@ -501,7 +501,7 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 md:py-24 bg-muted/30">
+      <section className="py-20 md:py-28 bg-muted/15">
         <div className="container max-w-3xl space-y-8">
           <div className="text-center space-y-4">
             <h2 className="text-foreground">Frequently Asked Questions</h2>
