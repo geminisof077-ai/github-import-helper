@@ -295,7 +295,7 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="bg-white border-2 border-primary rounded-xl p-8 text-center">
+          <div className="bg-card border-2 border-primary/40 rounded-xl p-10 text-center shadow-sm">
             <p className="text-muted-foreground mb-2">Total Real-World Value:</p>
             <p className="text-4xl font-bold text-primary mb-4">$79+</p>
             <p className="text-2xl text-foreground">
